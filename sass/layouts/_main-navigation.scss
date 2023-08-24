@@ -1,0 +1,95 @@
+@forward '../abstracts/__abstracts-dir';
+@use '../abstracts/__abstracts-dir' as *;
+
+// Custom styles
+.navbar {
+    background-color: $nav-color;
+    color: $paragraph-text-color;
+
+    .container-fluid {
+        a {
+            color: $paragraph-text-color;
+            text-decoration: none;
+            font-family: $header-font;
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    .navbar-social {
+        a {
+            margin-right: 10px;
+
+            img {
+                max-height: 20px;
+            }
+        }
+    }
+
+    .navbar-brand {
+        width: min-content;
+        font-weight: 600;
+        color: $heading-text-color;
+    }
+
+    .navbar-toggler {
+        color: $social-media-color;
+    }
+}
+
+
+.navbar-nav {
+    .nav-link {
+        color: $paragraph-text-color;
+        margin: 10px;
+        position: relative;
+        transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    .nav-link::after {
+        content: '';
+
+
+        &::after:hover,
+        &::after:active {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $secondary-color;
+            bottom: -3px;
+            /* Adjust this value for spacing */
+            left: 0;
+            transform: scaleX(1);
+            visibility: visible;
+            transform-origin: left center;
+            transition: transform 0.3s, width 0.3s;
+        }
+
+    }
+
+    .nav-link::after:active {
+        transform: scaleX(1) !important;
+    }
+
+    .nav-link:hover,
+    .nav-link:active {
+        color: $secondary-color !important;
+    }
+}
+
+.svg-container {
+    @include responsive-svg(1.25em, 0em, 3em); // arguments are ($svgwidth, $svgheight, $containerwidth)
+}
+
+.social-svg {
+    width: 100%;
+    position: relative;
+}
+
+.social-svg svg {
+    width: 1.5em;
+    height: auto;
+}

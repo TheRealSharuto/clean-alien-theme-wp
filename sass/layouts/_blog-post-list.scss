@@ -1,0 +1,90 @@
+@forward '../abstracts/__abstracts-dir';
+@use '../abstracts/__abstracts-dir' as *;
+
+.blog-listing-section {
+    padding: 40px 0;
+  
+    .blog-post-listing {
+      background-color: #fff;
+      padding: 20px;
+  
+      .link-overlay {
+        position: relative;
+        display: block;
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: $border-radius;
+          transition: filter 0.3s;
+        }
+  
+        .overlay {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: $secondary-color;
+          border-radius: 50%;
+          padding: 8px;
+          color: #fff;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+  
+        &:hover {
+          img {
+            filter: brightness(0.7);
+          }
+  
+          .overlay {
+            opacity: 1;
+          }
+        }
+      }
+  
+      .category {
+        font-size: 14px;
+        font-weight: 600;
+        color: $secondary-color;
+        margin-top: 10px;
+      }
+  
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+  
+      .excerpt {
+        font-size: 14px;
+        color: #666;
+        margin-top: 10px;
+      }
+  
+      .author-info {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+  
+        .author-photo {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+  
+        .author-details {
+          .author-name {
+            font-size: 14px;
+            font-weight: 600;
+          }
+  
+          .published-date {
+            font-size: 12px;
+            color: #999;
+          }
+        }
+      }
+    }
+  }

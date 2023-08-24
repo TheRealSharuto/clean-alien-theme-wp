@@ -1,0 +1,83 @@
+@forward '../abstracts/__abstracts-dir';
+@use '../abstracts/__abstracts-dir' as *;
+
+$container-background: url('/assets/images/galaxy-hero-img.jpg') center/cover;
+$container-height: 200px; /* Adjust this value as needed */
+
+.hero-section {
+    //background: $container-background; <-- Uncomment if you want the background to cover the entire screen below the nav
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 30px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .rounded-container {
+            //background: rgba(255, 255, 255, 0.8); --> Uncomment if you want the background of the rectangle to be white or a solid color
+            border-radius: $border-radius;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: $container-height; /* Apply the new height here */
+            position: relative;
+            background: $container-background;
+
+
+            h2 {
+                margin-bottom: 60px;
+                position: relative;
+            }
+
+            .hero-text {
+                padding-top: 5%;
+                color: #fff;
+                position: relative;
+            }
+
+            .input-container {
+                position: absolute;
+                bottom: -$border-radius;
+                left: 50%;
+                transform: translateX(-50%);
+                width: min-content;
+                background: #fff;
+                border-radius: $border-radius;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+                height: min-content;
+
+                input {
+                    border: none;
+                    flex: 1;
+                    padding: 8px;
+                    border-radius: $border-radius 0 0 $border-radius;
+                }
+
+                i {
+                    font-size: 20px;
+                    color: #868e96;
+                    position: relative;
+                }
+                #search-icon {
+                    margin-left: 10px;
+                }
+                #search-submission {
+                    cursor: pointer;
+                    color: $primary-color;
+                    transition: transform 0.3s ease-in-out;
+                        
+                }
+                #search-submission:hover {
+                    transform: translateX(10px);
+                }
+            }
+        }
+    }
+}

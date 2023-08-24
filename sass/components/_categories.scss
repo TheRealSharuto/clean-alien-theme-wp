@@ -1,0 +1,35 @@
+@forward '../abstracts/__abstracts-dir';
+@use '../abstracts/__abstracts-dir' as *;
+
+.category-section {
+    padding: 20px;
+    font-family: $header-font;
+    
+    .nav-pills {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      .nav-item {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 15px;
+        
+        .nav-link {
+            padding: 10px 20px;
+            border-radius: 30px;
+            background-color: none;
+            color: #79788A;
+            transition: background-color 0.5s, color 0.5s;
+            white-space: nowrap;
+          
+          &.active {
+            background-color: $secondary-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }

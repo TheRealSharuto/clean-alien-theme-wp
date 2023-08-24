@@ -1,0 +1,15 @@
+.link-dark {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.tag-text a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        background-color: $primary-color;
+    }
+}
