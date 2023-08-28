@@ -1,15 +1,32 @@
+@forward '../abstracts/__abstracts-dir';
+@use '../abstracts/__abstracts-dir' as *;
+
 .link-dark {
     text-decoration: none;
+
     &:hover {
         text-decoration: underline;
     }
 }
 
+#tag-text {
+    background-color: $secondary-color;
+    position: relative;
 
-.tag-text a {
-    text-decoration: none;
-    color: white;
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     &:hover {
         background-color: $primary-color;
+        transition: 0.5s ease;
     }
 }
+
+// Comments
+

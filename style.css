@@ -494,6 +494,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
   color: #999;
 }
 
+/*
+Theme Name: CleanAlien
+Text Domain: CleanAlien
+Version: 1.0
+Description: The best futuristic blog theme for 2023... or 2700.
+Tags: Top bar, futuristic, minimalist, clean, colorful, purple
+Author: Shara Belton
+Author URI: https://www.presentingshara.com/
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*
+Theme Name: CleanAlien
+Text Domain: CleanAlien
+Version: 1.0
+Description: The best futuristic blog theme for 2023... or 2700.
+Tags: Top bar, futuristic, minimalist, clean, colorful, purple
+Author: Shara Belton
+Author URI: https://www.presentingshara.com/
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 .link-dark {
   text-decoration: none;
 }
@@ -501,10 +521,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
   text-decoration: underline;
 }
 
-.tag-text {
+#tag-text {
+  background-color: #2DAAFC;
+  position: relative;
+}
+#tag-text a {
   text-decoration: none;
   color: white;
 }
+#tag-text a:hover {
+  text-decoration: underline;
+}
+#tag-text:hover {
+  background-color: #7D41E1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 /*
 Theme Name: CleanAlien
 Text Domain: CleanAlien
@@ -559,4 +592,35 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .category-section .nav-pills .nav-item .nav-link.active {
   background-color: #2DAAFC;
   color: #fff;
+}
+
+/*
+Theme Name: CleanAlien
+Text Domain: CleanAlien
+Version: 1.0
+Description: The best futuristic blog theme for 2023... or 2700.
+Tags: Top bar, futuristic, minimalist, clean, colorful, purple
+Author: Shara Belton
+Author URI: https://www.presentingshara.com/
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*
+Theme Name: CleanAlien
+Text Domain: CleanAlien
+Version: 1.0
+Description: The best futuristic blog theme for 2023... or 2700.
+Tags: Top bar, futuristic, minimalist, clean, colorful, purple
+Author: Shara Belton
+Author URI: https://www.presentingshara.com/
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.comments {
+  display: inline-block;
+}
+.comments a {
+  color: #13305C;
+  text-decoration: none;
+}
+.comments a:hover {
+  text-decoration: underline;
 }

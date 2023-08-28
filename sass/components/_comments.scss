@@ -1,0 +1,13 @@
+@forward '../abstracts/__abstracts-dir';
+@use '../abstracts/__abstracts-dir' as *;
+
+.comments {
+    display: inline-block;
+    a {
+    color: $social-media-color;
+    text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
