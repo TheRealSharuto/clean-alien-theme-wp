@@ -3,11 +3,27 @@
 
 .comments {
     display: inline-block;
+
     a {
-    color: $social-media-color;
-    text-decoration: none;
+        color: $social-media-color;
+        text-decoration: none;
     }
+
     a:hover {
         text-decoration: underline;
     }
+
+    .commentlist li ul {
+        list-style: none !important;
+        list-style-type: none;
+    }
 }
+
+.commentlist li ul.children li{
+    list-style: none !important;
+    list-style-type: none;
+}
+.bypostauthor .comment-footer-meta .by-post-author {
+	display: block;
+}
+

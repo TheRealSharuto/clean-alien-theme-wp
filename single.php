@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <!-- Head -->
 <?php require('template-partials/head.php'); ?>
 <!-- Head End -->
@@ -15,7 +13,7 @@
             while( have_posts() ){
 
                 the_post();
-                get_template_part( 'template-partials/content', 'article');
+                get_template_part( 'template-partials/content', 'archive');
             }
         }
     ?>
@@ -29,4 +27,3 @@
 </body>
 <!-- Scripts -->
 <?php require('template-partials/scripts.php'); ?>
-</html>

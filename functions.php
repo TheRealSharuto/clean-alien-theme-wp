@@ -82,6 +82,8 @@ function cleanalien_register_scripts()
 
 // hook function into WP system
 add_action('wp_enqueue_scripts', 'cleanalien_register_scripts');
+
+
 /**
  * cleanalien's functions and definitions
  *
