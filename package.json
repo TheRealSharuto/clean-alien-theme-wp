@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.66.1"
+  },
+  "engines": {
+    "node": "^20.0.2"
   }
 }
