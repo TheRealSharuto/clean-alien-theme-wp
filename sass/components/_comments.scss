@@ -13,17 +13,17 @@
         text-decoration: underline;
     }
 
-    .commentlist li ul {
+    .comment-list {
         list-style: none !important;
         list-style-type: none;
     }
 }
 
-.commentlist li ul.children li{
-    list-style: none !important;
+.comment-list, .comment-list ul {
+    list-style: none;
     list-style-type: none;
-}
-.bypostauthor .comment-footer-meta .by-post-author {
-	display: block;
-}
-
+  }
+  
+  .bypostauthor .comment-footer-meta .by-post-author {
+    display: block;
+  }

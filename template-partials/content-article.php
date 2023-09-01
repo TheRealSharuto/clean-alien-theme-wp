@@ -22,7 +22,7 @@
                         <!-- Post content-->
 
                         <section class="mb-5">
-                        <?php the_content('<span class="fs-5 mb-4">', '</span><<span class="fs-5 mb-4">','</span>');?>
+                        <?php the_content('<span class="fs-5 mb-4">', '</span><span class="fs-5 mb-4">','</span>');?>
                         </section>
                         <section>
                             <?php

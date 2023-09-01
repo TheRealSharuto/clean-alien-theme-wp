@@ -1,13 +1,14 @@
-@mixin responsive-svg($svgwidth, $svgheight, $containerwidth){
+@mixin responsive-svg($svgwidth, $svgheight, $containerwidth) {
     width: $containerwidth; // sizes the svg
     margin: 0 auto; // centers the svg
-   height: 0;
-   display: inline-block;
+    height: 0;
+    display: inline-block;
     padding-top: #{($svgheight/$svgwidth)*$containerwidth};
     position: relative;
+
     svg {
-    	position: absolute;
-    	top: 0;
-    	left: 0;
- }
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }

@@ -15,18 +15,21 @@
 
         <nav class="navigation comment-navigation" role="navigation">
 
-        <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'cleanalien' ); ?></h2>
-            <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'cleanalien' ); ?></h2>
+            <h2 class="screen-reader-text"><?php esc_html_e('Comment navigation', 'cleanalien'); ?></h2>
+            <h2 class="screen-reader-text"><?php esc_html_e('Comment navigation', 'cleanalien'); ?></h2>
             <div class="nav-links">
 
-                <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'cleanalien' ) ); ?></div>
-                <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'cleanalien' ) ); ?></div>
-                <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'cleanalien' ) ); ?></div>
-                <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'cleanalien' ) ); ?></div>
+                <div class="nav-previous"><?php previous_comments_link(esc_html__('Older Comments', 'cleanalien')); ?></div>
+                <div class="nav-previous"><?php previous_comments_link(esc_html__('Older Comments', 'cleanalien')); ?></div>
+                <div class="nav-next"><?php next_comments_link(esc_html__('Newer Comments', 'cleanalien')); ?></div>
+                <div class="nav-next"><?php next_comments_link(esc_html__('Newer Comments', 'cleanalien')); ?></div>
+
+            </div>
 
         </nav><!-- .comment-navigation -->
 
-    <?php endif; // Check for comment navigation ?>
+    <?php endif; // Check for comment navigation 
+    ?>
 
     <ul class="comment-list comments">
         <?php

@@ -13,7 +13,7 @@
             while( have_posts() ){
 
                 the_post();
-                get_template_part( 'template-partials/content', 'archive');
+                get_template_part( 'template-partials/content', 'article');
             }
         }
     ?>

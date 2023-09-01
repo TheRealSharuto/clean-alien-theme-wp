@@ -1,0 +1,1 @@
+<?php require('template-partials/head.php'); ?>

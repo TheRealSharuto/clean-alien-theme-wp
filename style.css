@@ -557,18 +557,29 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .comments a:hover {
   text-decoration: underline;
 }
+
 .comments .commentlist li ul {
+
+.comments .comment-list {
   list-style: none !important;
   list-style-type: none;
 }
 
 .commentlist li ul.children li {
   list-style: none !important;
+
+.comment-list, .comment-list ul {
+  list-style: none;
+
   list-style-type: none;
 }
 
 .bypostauthor .comment-footer-meta .by-post-author {
   display: block;
+
 }
 
 /*# sourceMappingURL=style.css.map */
+
+}
+
