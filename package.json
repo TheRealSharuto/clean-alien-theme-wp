@@ -1,0 +1,18 @@
+{
+  "name": "clean-alien-theme-wp",
+  "version": "1.0.0",
+  "description": "Super duper powerful Sharuto theme",
+  "main": "index.php",
+  "scripts": {
+    "build:sass": "sass style.scss style.css",
+    "watch:sass": "sass --watch style.scss style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  },
+  "engines": {
+    "node": "^20.0.2"
+  }
+}

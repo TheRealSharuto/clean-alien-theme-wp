@@ -8,7 +8,7 @@ Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@use 'abstracts/__abstracts-dir' as *;
-@use 'layouts/__layouts-dir' as *;
-@use 'base/__base-dir' as *;
-@use 'components/__components-dir' as *;
+@use 'sass/abstracts/__abstracts-dir' as *;
+@use 'sass/layouts/__layouts-dir' as *;
+@use 'sass/base/__base-dir' as *;
+@use 'sass/components/__components-dir' as *;
