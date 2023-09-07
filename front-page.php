@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php language_attributes(); ?>">
 <!-- Head -->
 <?php require('template-partials/head.php'); ?>
 <!-- Head End -->

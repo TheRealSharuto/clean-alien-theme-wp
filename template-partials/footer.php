@@ -1,3 +1,10 @@
+<?php
+/** 
+ * Footer template.
+ * 
+ * @package CleanAlien
+*/
+?>
 <footer class="text-center text-lg-start bg-white text-muted px-2">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -56,3 +63,4 @@
             </ul>
         </section>
                             </footer>
+                            <?php wp_footer(); ?>

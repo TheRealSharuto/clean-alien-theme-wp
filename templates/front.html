@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- bootstrap js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<!-- Head End -->
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- container wrapper -->
+        <div class="container-fluid">
+            <!-- Site Logo and Name -->
+            <a class="navbar-brand me-2 px-2" href="#">
+                <img src="/assets/images/site-logo.png" alt="Presenting Shara" class="d-inline-block align-text-top"
+                    loading="lazy">Presenting Shara
+            </a>
+            <!-- End of Site Logo and Name -->
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- toggle button -->
+            <!-- Navbar toggles these links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="layouts/about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="layouts/projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="layouts/blog.html">Blog</a>
+                    </li>
+                </ul>
+                <!-- left links end -->
+            </div>
+
+            <!--  right elements -->
+            <div class="d-flex align-items-center me-3">
+                <div class="dropdown me-3">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                        id="navbarDropdownMenuAvatar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="rounded-circle" src="assets/images/user-profile.png" alt="User Profile"
+                            loading="lazy">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="layouts/dashboard.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="layouts/logout.html">Log Out</a>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- left links end -->
+
+        </div>
+        <!-- end of toggled links -->
+    </nav>
+    <!--  Navbar End -->
+    <!-- HERO -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="rounded-container container">
+                <h2 class="text-center hero-text">Shara Was Here! &#128064;</h2>
+                <form class="input-container container">
+                    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                    <input type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit">
+                        <i class="fa-solid fa-arrow-right" id="search-submission"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- HERO END -->
+    <!-- categories -->
+
+    <section class="category-section">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-category="all">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-category="career">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-category="life">Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-category="health">Health</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-category="productivity">Productivity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-category="reviews">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Categories END -->
+    <!-- Featured blog list section -->
+    <section class="featured-blog-section">
+        <div class="container">
+            <!-- Blog post in container-->
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="featured-blog-post">
+                    <a href="layouts/partials/post.html" class="link-overlay" aria-label="Read this article">
+                    <img src="assets/images/featured-img.png" alt="Blog Post Thumbnail"
+                        class="img-fluid feature-rounded">
+                        <div class="overlay">
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blog-info">
+                        <div class="category">Category</div>
+                        <a href="layouts/partials/post.html" class="link-dark" aria-label="Read this article">
+                        <h2 class="title">Blog Post Title</h2>
+                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </a>
+                        <div class="author-info">
+                            <img src="assets/images/author-profile.png" alt="Author Photo" class="author-photo">
+                            <div class="author-details">
+                                <div class="author-name">Author Name</div>
+                                <div class="published-date">Published Date</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of blog post in container -->
+        </div>
+    </section>
+    <!-- End of featured blog section -->
+    <!-- Blog listings -->
+    <section class="blog-listing-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="blog-post-listing">
+                        <a href="#" class="link-overlay" aria-label="Read this article">
+                            <img src="assets/images/thumbnail-placeholder.jpeg" alt="Blog Post Thumbnail"
+                                class="img-fluid">
+                            <div class="overlay">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <div class="category">Category 1</div>
+                        <a href="#" class="link-dark">
+                        <h3 class="title">Blog Post Title 1</h3>
+                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        </a>
+                        <div class="author-info">
+                            <img src="assets/images/author-profile.png" alt="Author Photo" class="author-photo">
+                            <div class="author-details">
+                                <div class="author-name">Author 1</div>
+                                <div class="published-date">Published Date 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-post-listing">
+                        <a href="#" class="link-overlay">
+                            <img src="assets/images/thumbnail-placeholder.jpeg" alt="Blog Post Thumbnail"
+                                class="img-fluid">
+                            <div class="overlay">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <div class="category">Category 1</div>
+                        <a href="#" class="link-dark">
+                        <h3 class="title">Blog Post Title 1</h3>
+                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        </a>
+                        <div class="author-info">
+                            <img src="assets/images/author-profile.png" alt="Author Photo" class="author-photo">
+                            <div class="author-details">
+                                <div class="author-name">Author 1</div>
+                                <div class="published-date">Published Date 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-post-listing">
+                        <a href="#" class="link-overlay">
+                            <img src="assets/images/thumbnail-placeholder.jpeg" alt="Blog Post Thumbnail"
+                                class="img-fluid">
+                            <div class="overlay">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <div class="category">Category 1</div>
+                        <a href="#" class="link-dark">
+                        <h3 class="title">Blog Post Title 1</h3>
+                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </a>
+                        <div class="author-info">
+                            <img src="assets/images/author-profile.png" alt="Author Photo" class="author-photo">
+                            <div class="author-details">
+                                <div class="author-name">Author 1</div>
+                                <div class="published-date">Published Date 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other blog post listings -->
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="blog-post-listing">
+                        <a href="#" class="link-overlay">
+                            <img src="assets/images/thumbnail-placeholder.jpeg" alt="Blog Post Thumbnail"
+                                class="img-fluid">
+                            <div class="overlay">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <div class="category">Category 1</div>
+                        <a href="#" class="link-dark">
+                        <h3 class="title">Blog Post Title 1</h3>
+                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </a>
+                        <div class="author-info">
+                            <img src="assets/images/author-profile.png" alt="Author Photo" class="author-photo">
+                            <div class="author-details">
+                                <div class="author-name">Author 1</div>
+                                <div class="published-date">Published Date 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-post-listing">
+                        <a href="#" class="link-overlay">
+                            <img src="assets/images/thumbnail-placeholder.jpeg" alt="Blog Post Thumbnail"
+                                class="img-fluid">
+                            <div class="overlay">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <div class="category">Category 1</div>
+                        <a href="#" class="link-dark">
+                        <h3 class="title">Blog Post Title 1</h3>
+                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        </a>
+                        <div class="author-info">
+                            <img src="assets/images/author-profile.png" alt="Author Photo" class="author-photo">
+                            <div class="author-details">
+                                <div class="author-name">Author 1</div>
+                                <div class="published-date">Published Date 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-post-listing">
+                        <a href="#" class="link-overlay">
+                            <img src="assets/images/thumbnail-placeholder.jpeg" alt="Blog Post Thumbnail"
+                                class="img-fluid">
+                            <div class="overlay">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <div class="category">Category 1</div>
+                        <a href="#" class="link-dark">
+                        <h3 class="title">Blog Post Title 1</h3>
+                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        </a>
+                        <div class="author-info">
+                            <img src="assets/images/author-profile.png" alt="Author Photo" class="author-photo">
+                            <div class="author-details">
+                                <div class="author-name">Author 1</div>
+                                <div class="published-date">Published Date 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- blog post listing end -->
+            </div>
+        </div>
+    </section>
+    <!-- End of blog listings -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted px-2">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with me on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="social-svg me-4 link-secondary" href="#" role="button"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #13305c
+                                }
+                            </style>
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                            </path>
+                        </svg></a>
+                </li>
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="social-svg me-4 link-secondary" href="#" role="button"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #13305c
+                                }
+                            </style>
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                        </svg></a>
+                </li>
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="social-svg me-4 link-secondary" href="#" role="button"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #13305c
+                                }
+                            </style>
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                        </svg></a>
+                </li>
+                <!-- End of social media links -->
+            </ul>
+        </section>
+</body>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</html>
