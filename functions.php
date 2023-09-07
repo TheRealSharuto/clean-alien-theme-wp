@@ -66,7 +66,7 @@ function cleanalien_register_styles()
 	// 5th parameter: which stylesheet this is going to be user for. 
 	$version = wp_get_theme()->get('Version');
 	wp_enqueue_style('cleanalien-style', get_template_directory_uri() . "/style.css", array("cleanalien-bootstrap"), $version, 'all');
-	wp_enqueue_style('cleanalien-bootstrap', get_template_directory_uri() . "/bootstrap.css", array(),'5.0.2', 'all');
+	wp_enqueue_style('cleanalien-bootstrap', get_template_directory_uri() . "/assets/src/library/css/bootstrap.css", array(),'5.0.2', 'all');
 	//wp_enqueue_style('cleanalien-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css", array(), '5.0.2', 'all');
 	wp_enqueue_style('cleanalien-fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css", array("cleanalien-style"), '6.4.2', 'all');
 }

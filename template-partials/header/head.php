@@ -1,7 +1,17 @@
+<?php
+/** 
+ * Head (<head></head>) template.
+ * 
+ * @package CleanAlien
+*/
+?>
+<!DOCTYPE html>
+<html lang="<?php language_attributes(); ?>">
 <head>
     <!-- Displays information about the current site.  -->
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +20,7 @@
         rel="stylesheet">
         <!-- Theme CSS -->
         <?php
-            wp_head();
             get_header();
+            wp_head();
         ?>
 </head>

@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
-<!-- Head -->
-<?php require('template-partials/head.php'); ?>
-<!-- Head End -->
-<body>
-     <!-- Navbar -->
-     <?php require('template-partials/nav.php'); ?>
-    <!--  Navbar End -->
+
+<?php
+/**
+ * Main template file
+ * @package CleanAlien
+ * 
+ */
+get_header(); 
+?>
 
     <!-- HERO -->
     <?php require('template-partials/hero.php'); ?>
@@ -35,10 +35,5 @@
     <!-- End of blog listings -->
 
     <!-- Footer -->
-    <?php require('template-partials/footer.php'); ?>
+    <?php get_footer(); ?>
     <!-- Footer end -->
-
-</body>
-<!-- Scripts -->
-<?php require('template-partials/scripts.php'); ?>
-</html>

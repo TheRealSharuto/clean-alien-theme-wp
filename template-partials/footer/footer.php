@@ -62,5 +62,4 @@
                 <!-- End of social media links -->
             </ul>
         </section>
-                            </footer>
-                            <?php wp_footer(); ?>
+                            

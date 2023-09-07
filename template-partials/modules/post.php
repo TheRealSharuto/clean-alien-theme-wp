@@ -30,7 +30,7 @@
                         </p>
                         </a>
                         <div class="author-info">
-                            <img src="assets/images/author-profile.png" alt="Author Photo" class="author-photo">
+                            <img src="<?php get_avatar_url($author->ID, array("size"=>260 )); ?>" alt="Author Photo" class="author-photo">
                             <div class="author-details">
                                 <div class="author-name"><?php the_author_posts_link(); ?></div>
                                 <div class="published-date">

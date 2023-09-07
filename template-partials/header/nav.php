@@ -1,3 +1,11 @@
+<?php 
+/**
+ * Header Navigation template.
+ * 
+ * @package CleanAlien
+ */
+?>
+<header>
 <nav class="navbar navbar-expand-lg">
         <!-- container wrapper -->
         <div class="container-fluid">
@@ -60,3 +68,4 @@
         </div>
         <!-- end of toggled links -->
     </nav>
+</header>
