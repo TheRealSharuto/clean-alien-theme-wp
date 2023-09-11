@@ -30,6 +30,7 @@
                         </p>
                         </a>
                         <div class="author-info">
+                            <!-- Need help here, the avatar will not show. I had tried a plugin as well to switch from gravatar but had no luck. -->
                             <img src="<?php get_avatar_url($author->ID, array("size"=>260 )); ?>" alt="Author Photo" class="author-photo">
                             <div class="author-details">
                                 <div class="author-name"><?php the_author_posts_link(); ?></div>

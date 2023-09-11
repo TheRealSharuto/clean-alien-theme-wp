@@ -14,6 +14,11 @@ function cleanalien_theme_support()
 	add_theme_support('custom-logo');
 	// Add dynamic post thumbnails
 	add_theme_support('post-thumbnails');
+
+	add_theme_support( 'custom-background', [
+		'default-color' => '#FFFFFF',
+		'default-image' => '',
+	]);
 }
 
 add_action('after_setup_theme', 'cleanalien_theme_support');

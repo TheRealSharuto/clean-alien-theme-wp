@@ -12,3 +12,12 @@
             </div>
         </div>
     </section>
+<style>
+    .rounded-container {
+        background: <?php 
+$image_attributes = wp_get_attachment_image_src( $attachment->ID );
+if ( $image_attributes ) : ?>
+    <img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" />
+<?php endif; ?>;
+    }
+    </style>

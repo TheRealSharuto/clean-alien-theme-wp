@@ -1,7 +1,7 @@
 @forward '../abstracts/__abstracts-dir';
 @use '../abstracts/__abstracts-dir' as *;
 
-$container-background: url('/assets/images/galaxy-hero-img.jpg') center/cover;
+$container-background: url('../../../assets/images/galaxy-hero-img.jpg') center/cover;
 $container-height: 200px; /* Adjust this value as needed */
 
 .hero-section {
