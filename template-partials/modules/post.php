@@ -30,7 +30,6 @@
                         </p>
                         </a>
                         <div class="author-info">
-                            <!-- Need help here, the avatar will not show. I had tried a plugin as well to switch from gravatar but had no luck. -->
                             <?php
                                 $user = wp_get_current_user();
                                     if ( $user ) :
