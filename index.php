@@ -13,12 +13,17 @@ get_header();
                 <div class="container">
                     <div class="row">
     <?php
-        if( have_posts()){
+        if( have_posts()):
 
             while( have_posts() ): the_post();
                 get_template_part( 'template-partials/content', 'archive');
         endwhile;
-            }
+
+        else :
+
+            get_template_part( 'template-partials/content-none');
+    endif;
+
     ?>
  </div>
                 </div>

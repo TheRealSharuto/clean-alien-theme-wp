@@ -1,11 +1,11 @@
-<!-- Head -->
-<?php require('template-partials/head.php'); 
-get_header();?>
-<!-- Head End -->
-<body>
-     <!-- Navbar -->
-     <?php require('template-partials/nav.php'); ?>
-    <!--  Navbar End -->
+<?php
+/**
+ * ARCHIVE template file
+ * @package CleanAlien
+ * 
+ */
+get_header(); 
+?>
 <!--  in archive template -->
     <!-- Blog listings -->
     <section class="blog-listing-section" id="blog">
@@ -25,11 +25,6 @@ get_header();?>
                 </div>
     </section>
     <!-- End of blog listings -->
-
-    <!-- Footer -->
-    <?php require('template-partials/footer.php'); ?>
-    <!-- Footer end -->
-
-</body>
-<!-- Scripts -->
-<?php require('template-partials/scripts.php'); ?>
+<!-- Footer -->
+<?php get_footer(); ?>
+<!-- Footer end -->

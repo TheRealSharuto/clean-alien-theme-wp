@@ -1,11 +1,12 @@
-<!-- Head -->
-<?php require('template-partials/head.php'); ?>
-<!-- Head End -->
+<?php
+/**
+ * Single Post template file
+ * @package CleanAlien
+ * 
+ */
+get_header(); 
+?>
 <body>
-     <!-- Navbar -->
-     <?php require('template-partials/nav.php'); ?>
-    <!--  Navbar End -->
-
     <!-- Blog listings -->
     <?php
         if( have_posts()){
@@ -21,9 +22,5 @@
     <!-- End of blog listings -->
 
     <!-- Footer -->
-    <?php require('template-partials/footer.php'); ?>
+    <?php get_footer(); ?>
     <!-- Footer end -->
-
-</body>
-<!-- Scripts -->
-<?php require('template-partials/scripts.php'); ?>

@@ -1,7 +1,7 @@
 
 <?php
 /**
- * Main template file
+ * Front Page template file
  * @package CleanAlien
  * 
  */
