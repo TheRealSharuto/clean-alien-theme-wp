@@ -10,11 +10,9 @@
                         <div class="category">
                             <?php 
                             $args = array(
-                                'style'      => 'list',
                                 'hide_empty' => 1,
                                 );
-                                get_categories($args);
-                            get_categories();
+                            the_category(', ');
                                 ?>
                         </div>
                         <a href="<?php the_permalink(); ?>" class="link-dark">

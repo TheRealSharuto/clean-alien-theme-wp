@@ -312,7 +312,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .featured-blog-section .blog-info .category {
   font-size: 14px;
   font-weight: 400;
-  color: #2DAAFC;
+  color: #2DAAFC !important;
 }
 .featured-blog-section .blog-info .title {
   font-size: 24px;
