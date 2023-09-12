@@ -31,7 +31,12 @@
                         </a>
                         <div class="author-info">
                             <!-- Need help here, the avatar will not show. I had tried a plugin as well to switch from gravatar but had no luck. -->
-                            <img src="<?php get_avatar_url($author->ID, array("size"=>260 )); ?>" alt="Author Photo" class="author-photo">
+                            <?php
+                                $user = wp_get_current_user();
+                                    if ( $user ) :
+	                        ?>
+	                        <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" class="author-photo"/>
+                            <?php endif; ?>
                             <div class="author-details">
                                 <div class="author-name"><?php the_author_posts_link(); ?></div>
                                 <div class="published-date">
