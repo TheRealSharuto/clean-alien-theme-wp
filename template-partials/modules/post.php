@@ -32,7 +32,9 @@
                                 $user = wp_get_current_user();
                                     if ( $user ) :
 	                        ?>
-	                        <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" class="author-photo"/>
+	                        <img src="<?php 
+                            echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ) ) ); 
+                            ?>" class="author-photo"/>
                             <?php endif; ?>
                             <div class="author-details">
                                 <div class="author-name"><?php the_author_posts_link(); ?></div>
