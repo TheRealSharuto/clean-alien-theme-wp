@@ -1,5 +1,6 @@
 <div class="col-md-4 mb-4">
                     <div class="blog-post-listing">
+                    <?php if (has_post_thumbnail()) { ?>
                         <a href="<?php the_permalink(); ?>" class="link-overlay" aria-label="Read this article">
                             <img src="<?php the_post_thumbnail_url(); ?>" alt="Blog Post Thumbnail"
                                 class="img-fluid">
@@ -7,6 +8,7 @@
                                 <i class="fas fa-arrow-circle-right"></i>
                             </div>
                         </a>
+                        <?php } ?>
                         <div class="category">
                             <?php 
                             $args = array(
@@ -39,7 +41,7 @@
                             <div class="author-details">
                                 <div class="author-name"><?php the_author_posts_link(); ?></div>
                                 <div class="published-date">
-                                    <?php the_date();
+                                    <?php echo get_the_date();
                                     ?>
                                 </div>
                             </div>

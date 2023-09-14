@@ -18,13 +18,18 @@
                         </div>
                             <!-- Post categories-->
                         <?php
+                        if (has_tag()) {
                                 the_tags('<span id="tag-text" class="badge rounded-pill text-nowrap mx-1" type="button">', '</span><span id="tag-text" class="mx-1 badge rounded-pill text-nowrap" type="button">', '</span>');
+                        }?>
+                        <?php 
                         //featured image
-                        ?>
+                            if (has_post_thumbnail()) {
+                            $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); 
+                            ?>
                         <figure class="pt-5 pb-5">
                             <a href="<?php echo esc_url( get_permalink() ); ?>">
-                            <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
                             <img class="img-fluid rounded" src="<?php echo $url ?>" alt="..." />
                             </a>
                         </figure>
+                        <?php } ?>
                 </header>
