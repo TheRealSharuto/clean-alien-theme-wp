@@ -6,8 +6,6 @@
  * 
  * 
  */
-$the_post_id = get_the_ID();
-$has_featured_img = get_the_featured_img( $the_post_id );
 ?>
 
             <!-- Post header -->
@@ -20,16 +18,18 @@ $has_featured_img = get_the_featured_img( $the_post_id );
                         </div>
                             <!-- Post categories-->
                         <?php
+                        if (has_tag()) {
                                 the_tags('<span id="tag-text" class="badge rounded-pill text-nowrap mx-1" type="button">', '</span><span id="tag-text" class="mx-1 badge rounded-pill text-nowrap" type="button">', '</span>');
+                        }?>
+                        <?php 
                         //featured image
-                        if ( $has_featured_img ) {
+                            if (has_post_thumbnail()) {
+                            $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); 
                             ?>
-                        <figure class="mb-4 px-3">
+                        <figure class="pt-5 pb-5">
                             <a href="<?php echo esc_url( get_permalink() ); ?>">
-                            <img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." />
+                            <img class="img-fluid rounded" src="<?php echo $url ?>" alt="..." />
                             </a>
                         </figure>
-                            <?php
-                        }
-                        ?>
+                        <?php } ?>
                 </header>
