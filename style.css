@@ -7,6 +7,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*
@@ -71,6 +72,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 /*
 Theme Name: CleanAlien
@@ -81,6 +83,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 .navbar {
   background-color: #fff;
@@ -173,6 +176,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 /*
 Theme Name: CleanAlien
@@ -183,6 +187,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 /* Adjust this value as needed */
 .hero-section {
@@ -204,7 +209,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   width: 100%;
   height: 200px; /* Apply the new height here */
   position: relative;
-  background: url("/assets/images/galaxy-hero-img.jpg") center/cover;
+  background: url("../../../assets/images/galaxy-hero-img.jpg") center/cover;
 }
 .hero-section .container .rounded-container h2 {
   margin-bottom: 60px;
@@ -261,6 +266,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 /*
 Theme Name: CleanAlien
@@ -271,6 +277,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 .featured-blog-section {
   padding: 40px 0;
@@ -312,7 +319,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .featured-blog-section .blog-info .category {
   font-size: 14px;
   font-weight: 400;
-  color: #2DAAFC !important;
+  color: #2DAAFC;
 }
 .featured-blog-section .blog-info .title {
   font-size: 24px;
@@ -353,6 +360,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 /*
 Theme Name: CleanAlien
@@ -363,6 +371,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 .blog-listing-section {
   padding: 40px 0;
@@ -444,6 +453,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 /*
 Theme Name: CleanAlien
@@ -454,6 +464,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 .link-dark {
   text-decoration: none;
@@ -487,6 +498,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 /*
 Theme Name: CleanAlien
@@ -497,6 +509,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 .category-section {
   padding: 20px;
@@ -527,6 +540,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   color: #fff;
 }
 
+.blog-listing-section .blog-post-listing div.category {
+  color: #2DAAFC !important;
+}
+
 /*
 Theme Name: CleanAlien
 Text Domain: CleanAlien
@@ -536,6 +553,7 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
 /*
 Theme Name: CleanAlien
@@ -546,29 +564,43 @@ Tags: Top bar, futuristic, minimalist, clean, colorful, purple
 Author: Shara Belton
 Author URI: https://www.presentingshara.com/
 Use it to make something cool, have fun, and share what you've learned with others.
+* NOTE: If styling changes do not show, go to package.json and run the script on VSC from there.
 */
-.comments {
-  display: inline-block;
-}
-.comments a {
-  color: #13305C;
-  text-decoration: none;
-}
-.comments a:hover {
-  text-decoration: underline;
-}
-.comments .comment-list {
-  list-style: none !important;
-  list-style-type: none;
-}
-
-.comment-list, .comment-list ul {
-  list-style: none;
-  list-style-type: none;
+#submit {
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #2DAAFC;
+  padding: 10px 30px;
+  border: 2px solid #2DAAFC;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 50px;
+  transition: 1150ms;
+  transform: translateY(0);
+  align-items: center;
+  cursor: pointer;
 }
 
-.bypostauthor .comment-footer-meta .by-post-author {
-  display: block;
+#submit:hover {
+  transition: 1150ms;
+  padding: 10px 30px;
+  transform: translateY(0px);
+  background-color: #fff;
+  color: #2DAAFC;
+  border: solid 2px #2DAAFC;
+}
+
+.user_pfp {
+  height: auto;
+  width: 40px;
+}
+
+.user_display_name {
+  display: flex;
+}
+
+#comment-section header {
+  display: inline-flex;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -14,6 +14,8 @@ function cleanalien_theme_support()
 	add_theme_support('custom-logo');
 	// Add dynamic post thumbnails
 	add_theme_support('post-thumbnails');
+	// Register image sizes
+	add_image_size('featured-large', 736, 385, true );
 
 	add_theme_support( 'custom-background', [
 		'default-color' => '#FFFFFF',
@@ -88,10 +90,24 @@ function cleanalien_register_scripts()
 // hook function into WP system
 add_action('wp_enqueue_scripts', 'cleanalien_register_scripts');
 
+// COMMENTS
+// remove website field from comments
+
+function wpbeginner_remove_comment_url($arg) {
+    $arg['url'] = '';
+	$arg['email'] = '';
+    return $arg;
+}
+add_filter('comment_form_default_fields', 'wpbeginner_remove_comment_url');
+
+/**
+ * Load Custom Comments Layout file.
+ */
+require get_template_directory() . '/includes/helpers/comment-helper.php';
 
 /**
  * cleanalien's functions and definitions
  *
- * @package cleanalien
- * @since cleanalien 1.0
+ * @package CleanAlien
+ * @since CleanAlien 1.0
  */
