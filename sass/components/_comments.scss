@@ -1,29 +1,40 @@
 @forward '../abstracts/__abstracts-dir';
 @use '../abstracts/__abstracts-dir' as *;
 
-.comments {
-    display: inline-block;
-
-    a {
-        color: $social-media-color;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .comment-list {
-        list-style: none !important;
-        list-style-type: none;
-    }
+#submit{
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: $secondary-color;
+padding: 10px 30px;
+border: 2px solid $secondary-color;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+border-radius: 50px;
+transition : 1150ms;
+transform: translateY(0);
+align-items: center;
+cursor: pointer;
 }
 
-.comment-list, .comment-list ul {
-    list-style: none;
-    list-style-type: none;
-  }
-  
-  .bypostauthor .comment-footer-meta .by-post-author {
-    display: block;
-  }
+#submit:hover{
+
+transition : 1150ms;
+padding: 10px 30px;
+transform : translateY(-0px);
+background-color: #fff;
+color: $secondary-color;
+border: solid 2px $secondary-color;
+}
+
+.user_pfp {
+    height: auto;
+    width: 40px;
+}
+
+.user_display_name {
+    display: flex;
+}
+
+#comment-section header {
+    display: inline-flex;
+}
